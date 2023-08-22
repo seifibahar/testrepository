@@ -26,7 +26,7 @@ direction: rtl;
   transition: all 200ms ease;
 }
 .text_hover_shadow:hover{
-  text-shadow: 0 0 8px rgb(20, 209, 234);
+  text-shadow: 0 0 8px rgb(25, 202, 225);
 }
 .h_fit{
   height: fit-content;
