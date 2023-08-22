@@ -1,0 +1,33 @@
+@font-face {
+  font-family:Byekan;
+  src: url(../public/font/KOODAKB.TTF);
+}
+html,#root{
+  height: 100%;
+}
+
+body{
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: rgb(9,185,103);
+  background: linear-gradient(60deg,rgb(9,187,104)100%,hsla(186,100%,70));
+  background: -moz-linear-gradient(90deg,rgb(9,187,104)0%,hsla(186,100%,70));
+}
+*{
+font-size: Byekan;
+direction: rtl;  
+}
+.pointer{
+  cursor: pointer !important;
+}
+.transition_200{
+  transition: all 200ms ease;
+}
+.text_hover_shadow:hover{
+  text-shadow: 0 0 8px rgb(20, 209, 234);
+}
+.h_fit{
+  height: fit-content;
+}
