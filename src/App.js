@@ -4,14 +4,39 @@ import TaskItemes from './TaskItemes';
 
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { MyContext } from './mycontext';
 
 function App() {
+  const [todoItem, settodoItem] = useState([
+    {
+      id: 1,
+      task: "کار شماره 1",
+      active: false,
+
+    },
+    {
+      id: 2,
+      task: "کار شماره 2",
+      active: false,
+    },
+    {
+      id: 3,
+      task: "کار شماره 3",
+      active: true,
+    },
+
+  ]);
+
   return (
     <div className="container w-100 h-100 p-4">
       <div className="row h-100 justify-content-center align-align-items-start">
         <div className="col-12 col-md-8 col-lg-6 bg-light shadow rounded-3 p-3 h-fit">
-          <TopItemes />
-          <TaskItemes />
+          <MyContext.Provider value={{ todoItem, settodoItem }}>
+            <TopItemes />
+            <TaskItemes />
+          </MyContext.Provider>
+
 
 
         </div>

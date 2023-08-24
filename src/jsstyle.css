@@ -11,7 +11,7 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  background: rgb(9,185,103);
+  background: rgb(13, 182, 103);
   background: linear-gradient(60deg,rgb(9,187,104)100%,hsla(186,100%,70));
   background: -moz-linear-gradient(90deg,rgb(9,187,104)0%,hsla(186,100%,70));
 }
